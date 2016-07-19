@@ -1,0 +1,113 @@
+
+.body{
+        background-image: url("../img/back2.jpg");
+        background-color: #bbb;
+      }
+
+.bog1{
+	background-image: url("../img/back1.jpg");
+}
+
+.bog2{
+	background-image: url("../img/back2.jpg");
+}
+
+.bog3{
+	background-image: url("../img/back3.jpg");
+}
+
+.bog4{
+	background-image: url("../img/back4.jpg");
+}
+
+.bog5{
+  background-image: url("../img/back5.jpg");
+}
+
+
+    .panel.panel-banner {
+      border-width: 0px;
+      border-radius: 0px 0px 10px 10px;
+      /*margin: 0 0 10px 0;*/
+    }
+    .panel-body.panel-banner-body{
+      padding: 0px;
+    }
+    .panel.panel-banner img{
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+    }
+
+    .panel.panel-red{
+      border-color: red;
+    }
+    .panel-heading.panel-red{
+      background-color: red;
+      color: white;
+    }
+    .panel-footer.panel-red
+    {
+      background-color: #ffdddd;
+    }
+
+    .panel.panel-cp {
+      display: none;
+      z-index: 1;
+      border-width: 2px;
+      border-radius: 8px 8px 8px 8px;
+      border-color: #999999;
+      position:fixed;
+      top: 60px;
+      left: 20px;
+      width: 200px;
+      min-height: 200px;
+      opacity: .9;
+    }
+    .panel-heading.panel-cp{
+      background-color: #999999;
+      color: white;
+    }
+    .panel-heading.panel-cp a{
+      color: #cccccc;
+    }
+    .panel-heading.panel-cp a:hover{
+      color: #666666;
+    }
+    .panel-body.panel-cp{
+      padding: 2px;
+      font-size: 10px;
+    }
+
+    .panel-body.no-padding
+    {
+      padding: 0px;
+    }
+
+  
+    
+
+.cp-toggle
+{
+	position:fixed;
+    top: 20px;
+    left: 0px;
+    width:40px;
+    height:30px;
+    background-color: #666666;
+    z-index: 1;
+    opacity: .5;
+    border-radius: 0 5px 5px 0px;
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+  .google-map {
+      height: 300px;
+      width: 100%;
+    }
+
+
+
+
+
+  

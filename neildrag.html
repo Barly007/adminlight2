@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drag Board</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<style type="text/css">
+		
+		body {
+			background-color: grey;
+		}
+		.wrapper {
+		  padding: 0 20px;
+		}
+		.wrapper-content {
+		  padding: 20px 10px 80px;
+		}
+
+
+		
+
+
+		.sortable-list {
+		  padding: 10px 0;
+		}
+	/*	.ui-sortable .ibox-title {
+		  cursor: move;
+		}
+		.ui-sortable-placeholder {
+		  border: 2px dashed #cecece !important;
+		  visibility: visible !important;
+		  background: yellow;
+		}
+		.ibox.ui-sortable-placeholder {
+		  margin: 0 0 23px !important;
+		}*/
+
+		.agile-list {
+		  list-style: none;
+		  margin: 0;
+		}
+		.agile-list li {
+		  background: #FAFAFB;
+		  border: 1px solid #e7eaec;
+		  margin: 0 0 10px 0;
+		  padding: 10px;
+		  border-radius: 2px;
+		}
+		.agile-list li:hover {
+		  cursor: pointer;
+		  background: #fff;
+		}
+		.agile-list li.warning-element {
+		  border-left: 3px solid #f8ac59;
+		}
+		.agile-list li.danger-element {
+		  border-left: 3px solid #ed5565;
+		  border-right: 3px solid red;
+		}
+		.agile-list li.info-element {
+		  border-left: 3px solid #1c84c6;
+		}
+		.agile-list li.success-element {
+		  border-left: 3px solid #1ab394;
+		}
+		.agile-detail {
+		  margin-top: 5px;
+		  font-size: 12px;
+		}
+		.output{
+			margin: 10px;
+			padding: 5px;
+			background-color: #5E595A;
+			min-height:40px;
+			border: 1px #aaaaaa dashed;
+		}
+
+
+		.ibox {
+		  clear: both;
+		  margin-bottom: 25px;
+		  margin-top: 0;
+		  padding: 0;
+		  border-top: 5px solid black;
+		  border-bottom: 2px solid black;
+		}
+		/*.ibox.collapsed .ibox-content {
+		  display: none;
+		}
+		.ibox.collapsed .fa.fa-chevron-up:before {
+		  content: "\f078";
+		}
+		.ibox.collapsed .fa.fa-chevron-down:before {
+		  content: "\f077";
+		}
+		.ibox:after,
+		.ibox:before {
+		  display: table;
+		}*/
+		.ibox-title {
+		  -moz-border-bottom-colors: none;
+		  -moz-border-left-colors: none;
+		  -moz-border-right-colors: none;
+		  -moz-border-top-colors: none;
+		  background-color: #ffffff;
+		  border-color: #e7eaec;
+		  border-image: none;
+		  border-style: solid solid none;
+		  border-width: 3px 0 0;
+		  color: inherit;
+		  margin-bottom: 0;
+		  padding: 14px 15px 7px;
+		  min-height: 48px;
+		}
+		.ibox-content {
+		  background-color: #ffffff;
+		  color: inherit;
+		  padding: 15px 20px 20px 20px;
+		  border-color: #e7eaec;
+		  border-image: none;
+		  border-style: solid solid none;
+		  border-width: 1px 0;
+		}
+		.ibox-content h3{
+			font-weight: 100;
+			 font-size: 16px;
+		}
+		.ibox-footer {
+		  color: inherit;
+		  border-top: 1px solid #e7eaec;
+		  font-size: 90%;
+		  background: #ffffff;
+		  padding: 10px 15px;
+		}
+		.pants {
+		  border: 2px dashed #cecece !important;
+		  visibility: visible !important;
+		  background: green;
+		}
+	</style>
+
+</head>
+<body>
+<div class="wrapper wrapper-content  animated fadeInRight">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="ibox">
+                <div class="ibox-content">
+                    <h3>To-do</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+					<ul class="sortable-list agile-list sortlist" id="todo">
+						<li class="warning-element" id="t1">eat</li>
+						<li class="danger-element" id="t2">drink</li>
+						<li class="warning-element" id="t3">play</li>
+						<li class="info-element" id="t4">read</li>
+						<li class="warning-element" id="t5">cook</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-3">
+			<div class="ibox">
+                <div class="ibox-content">
+                    <h3>Doing</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+					<ul class="sortable-list agile-list sortlist" id="doing">
+						<li class="warning-element" id="t6">hoover</li>
+						<li class="info-element" id="t7">wash</li>
+						<li class="warning-element" id="t8">dust</li>
+						<li class="warning-element" id="t9">gardening</li>
+						<li class="warning-element" id="t10">iron</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="ibox">
+                <div class="ibox-content">
+                    <h3><strong>Forgot</strong></h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+					<ul class="sortable-list agile-list sortlist" id="forgot">
+						<li class="warning-element" id="t16">lotto</li>
+						<li class="warning-element" id="t17">grass</li>
+						<li class="success-element" id="t18">fish n chips</li>
+						<li class="warning-element" id="t19">football</li>
+						<li class="warning-element" id="t20">fishing</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="ibox">
+                <div class="ibox-content">
+                    <h3>Done</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+						<ul class="sortable-list agile-list sortlist" id="done">
+							<li class="warning-element" id="t11">slept</li>
+							<li class="warning-element" id="t12">bought a horse</li>
+							<li class="success-element" id="t13">fed cat</li>
+							<li class="warning-element" id="t14">work</li>
+							<li class="warning-element" id="t15">danced</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<div id="showlist" class="output"></div>
+
+<button id="press">Clear</button>
+
+
+<script src="assets/js/jquery-3.0.0.min.js"></script>	
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#todo, #doing, #done, #forgot").sortable({
+		connectWith: ".sortlist",
+		placeholder: "pants",
+		forcePlaceholderSize: true,
+		cursor: "move",
+		items: "> li",
+		update: function( event, ui ) {
+               var todo = $( "#todo" ).sortable( "toArray" );
+               var doing = $( "#doing" ).sortable( "toArray" );
+               var done = $( "#done" ).sortable( "toArray" );
+               var forgot = $( "#forgot" ).sortable( "toArray" );
+              $('.output').html("Todo: " + todo + "<br>" + "Doing: " + doing + "<br>" + "Done: " + done + "<br>" + "Forgot: " + forgot + "<br>");
+		}
+	});
+
+	$("#todo, #doing, #done, #forgot").disableSelection();
+
+	 $( '#press').click(function() {
+             $('.output').html("*** cleared ***");
+              });
+
+});
+
+</script>
+
+</body>
+</html>

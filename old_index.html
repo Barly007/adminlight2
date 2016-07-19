@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Event GIANT Front End</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/myboot.css" rel="stylesheet">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+    
+
+  </head>
+  <body class="body">
+  
+  <div class="cp-toggle">
+    <i class="fa fa-cog fa-2x"></i>
+  </div>
+   
+   
+        <div class="panel panel-cp">
+            <div class="panel-heading panel-cp">Control Panel <i class="fa fa-times pull-right"></i></div>
+              <div class="panel-body panel-cp">
+                <p>Backgrounds:<br>
+                <img src="assets/img/back1.jpg" height="30" width="30" id="bg1">
+                <img src="assets/img/back2.jpg" height="30" width="30" id="bg2">
+                <img src="assets/img/back3.jpg" height="30" width="30" id="bg3">
+                <img src="assets/img/back4.jpg" height="30" width="30" id="bg4">
+                <img src="assets/img/back5.jpg" height="30" width="30" id="bg5">
+                </p>
+                <p>Banner:<br>
+                <img src="assets/img/eg_banner_1.jpg" height="30" width="70" id="ba1">
+                <img src="assets/img/eg_banner_2.jpg" height="30" width="70" id="ba2">
+                <img src="assets/img/eg_banner_3.jpg" height="30" width="70" id="ba3">
+                <img src="assets/img/eg_banner_4.jpg" height="30" width="70" id="ba4">
+                <img src="assets/img/eg_banner_5.jpg" height="30" width="70" id="ba5">
+                </p>
+               </div> 
+            </div>
+        </div>
+    
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="panel panel-banner">
+            <div class="panel-body panel-banner-body">
+              <img id="banner" src="assets/img/eg_banner_1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-md-2"></div>
+        
+        <div class="col-md-6">
+          <div class="panel panel-red">
+            <div class="panel-heading panel-red">Reg Form</div>
+            <div class="panel-body">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae rerum quae, exercitationem reiciendis, provident libero esse iste itaque voluptate tenetur obcaecati vero consequuntur necessitatibus quaerat voluptatum, laudantium nobis blanditiis nulla.</div>
+              <div>Cupiditate adipisci numquam nulla natus, est tempore obcaecati sed laudantium deleniti illum dicta veniam veritatis corrupti repudiandae ipsa vel recusandae repellendus dolorum voluptatibus consequuntur! Ad veritatis porro, fugiat similique velit.</div>
+            </div>
+            <div class="panel-footer panel-red">footer</div>
+          </div>
+          
+          <div class="panel panel-primary">
+            <div class="panel-heading">Contact Detials</div>
+            <div class="panel-body">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate similique eveniet accusamus mollitia quos nostrum, tenetur ad voluptatibus iure molestias autem veritatis omnis ipsa distinctio quas, amet obcaecati eaque deserunt?</div>
+              <div>Exercitationem non sunt natus iusto doloribus itaque sit! Ex magni soluta, facere nostrum quibusdam quas error, impedit est voluptatem ipsam iusto, ipsum. Esse dolores, quibusdam explicabo blanditiis sunt omnis expedita.</div>
+              <div>Voluptatibus praesentium ducimus facilis fuga, quaerat nesciunt quia adipisci accusamus, ipsam qui, cupiditate, quod est blanditiis ipsa tempora magni. Illum facilis tenetur, ipsam fuga. Doloribus delectus alias quo! Quia, fuga.</div>
+            </div>
+            <div class="panel-footer panel-success">footer</div>
+          </div>
+          
+          <div class="panel panel-primary">
+            <div class="panel-heading">Dietry Detials</div>
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quas inventore, perferendis officiis veniam est distinctio quis? Quasi doloremque iure facere doloribus in voluptate dolor et perspiciatis nihil libero, provident?
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col-md-2">
+          
+          <div class="panel panel-primary">
+            <div class="panel-heading">Location Info</div>
+            <div class="panel-body">
+              <p>Hotel info</p>
+              <p>Map</p>
+              <p>Weather</p>
+            </div>
+            <div class="panel-footer panel-success">footer</div>
+          </div>
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">Twitter feed</div>
+            <div class="panel-body">
+              <p>trending</p>
+              <p>event hashtag</p>
+            </div>
+            <div class="panel-footer panel-success">footer</div>
+          </div>
+        
+        </div>
+        
+         <div class="col-md-2">
+
+      </div>
+
+      
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          $( '.cp-toggle').click(function() {
+              $( ".panel.panel-cp" ).fadeIn();
+              $( ".cp-toggle" ).fadeOut();
+              });
+          
+          $( '.panel-heading.panel-cp').click(function() {
+              $( ".panel.panel-cp" ).fadeOut();
+              $( ".cp-toggle" ).fadeIn();
+              });
+
+          $( '#bg1').click(function() {
+              $( "body" ).attr( "class", "bog1" );
+              });  
+          $( '#bg2').click(function() {
+              $( "body" ).attr( "class", "bog2" );
+              }); 
+          $( '#bg3').click(function() {
+              $( "body" ).attr( "class", "bog3" );
+              }); 
+          $( '#bg4').click(function() {
+              $( "body" ).attr( "class", "bog4" );
+              });        
+          $( '#bg5').click(function() {
+              $( "body" ).attr( "class", "bog5" );
+              });
+
+          $( '#ba1').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_1.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });  
+           $( '#ba2').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_2.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+            $( '#ba3').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_3.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+          $( '#ba4').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_4.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+          $( '#ba5').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_5.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+        });
+          
+      </script>
+
+
+  </body>
+</html>

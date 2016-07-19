@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Event GIANT Front End</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/myboot.css" rel="stylesheet">
+     <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+#makeMeDraggable { width: 300px; height: 300px; background: red; }
+</style>
+
+  </head>
+  <body class="body">
+  
+<div id="makeMeDraggable"> </div>
+
+  <div class="cp-toggle">
+    <i class="fa fa-cog fa-2x"></i>
+  </div>
+   
+  <div class="panel panel-cp">
+      <div class="panel-heading panel-cp">Control Panel <a id="close-cp" href="#"><i class="fa fa-times pull-right"></a></i></div>
+        <div class="panel-body panel-cp">
+          <p>Backgrounds:<br>
+          <img src="assets/img/back1.jpg" height="30" width="30" id="bg1">
+          <img src="assets/img/back2.jpg" height="30" width="30" id="bg2">
+          <img src="assets/img/back3.jpg" height="30" width="30" id="bg3">
+          <img src="assets/img/back4.jpg" height="30" width="30" id="bg4">
+          <img src="assets/img/back5.jpg" height="30" width="30" id="bg5">
+          </p>
+          <p>Banner:<br>
+          <img src="assets/img/eg_banner_1.jpg" height="30" width="70" id="ba1">
+          <img src="assets/img/eg_banner_2.jpg" height="30" width="70" id="ba2">
+          <img src="assets/img/eg_banner_3.jpg" height="30" width="70" id="ba3">
+          <img src="assets/img/eg_banner_4.jpg" height="30" width="70" id="ba4">
+          <img src="assets/img/eg_banner_5.jpg" height="30" width="70" id="ba5">
+          </p>
+         </div> 
+      </div>
+  </div>
+    
+
+  <!-- Start Main Page Content -->
+  <div class="container">
+      
+      <!-- Banner Row -->
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="panel panel-banner">
+            <div class="panel-body panel-banner-body">
+              <img id="banner" src="assets/img/eg_banner_1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Content Row -->
+      <div class="row">
+
+        <!-- 1st Column Spacer -->
+        <div class="col-md-1"></div>
+        
+        <!-- Main Content Column -->
+        <div class="col-md-7">
+
+          <!-- 1st content panel -->
+          <div class="panel panel-red">
+            <div class="panel-heading panel-red">Reg Form</div>
+            <div class="panel-body">
+              <div>Lorem dolor sit amet, consectetur adipisicing elit. Beatae rerum quae, exercitationem reiciendis, provident libero esse iste itaque voluptate tenetur obcaecati vero consequuntur necessitatibus quaerat voluptatum, laudantium nobis blanditiis nulla.</div>
+              <div>Cupiditate adipisci numquam nulla natus, est tempore obcaecati sed laudantium deleniti illum dicta veniam veritatis corrupti repudiandae ipsa vel recusandae repellendus dolorum voluptatibus consequuntur! Ad veritatis porro, fugiat similique velit.</div>
+            </div>
+            <div class="panel-footer panel-red">footer</div>
+          </div>
+          
+          <!-- 2nd content panel -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Contact Detials</div>
+            <div class="panel-body">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate similique eveniet accusamus mollitia quos nostrum, tenetur ad voluptatibus iure molestias autem veritatis omnis ipsa distinctio quas, amet obcaecati eaque deserunt?</div>
+              <div>Exercitationem non sunt natus iusto doloribus itaque sit! Ex magni soluta, facere nostrum quibusdam quas error, impedit est voluptatem ipsam iusto, ipsum. Esse dolores, quibusdam explicabo blanditiis sunt omnis expedita.</div>
+              <div>Voluptatibus praesentium ducimus facilis fuga, quaerat nesciunt quia adipisci accusamus, ipsam qui, cupiditate, quod est blanditiis ipsa tempora magni. Illum facilis tenetur, ipsam fuga. Doloribus delectus alias quo! Quia, fuga.</div>
+            </div>
+            <div class="panel-footer panel-success">footer</div>
+          </div>
+          
+          <!-- 3rd content panel -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Dietry Detials</div>
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quas inventore, perferendis officiis veniam est distinctio quis? Quasi doloremque iure facere doloribus in voluptate dolor et perspiciatis nihil libero, provident?
+            </div>
+          </div>
+
+        <!-- Ends main contenl column -->
+        </div>
+        
+        <!-- Right column content -->
+        <div class="col-md-3">
+          
+          <!-- right column content panel 1 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Event Weather</div>
+            <div class="panel-body no-padding">
+             aaa
+            </div>
+          </div>
+
+          <!-- right column content panel 2 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Event Twitter</div>
+            <div class="panel-body no-padding">
+             bbb
+            </div>
+          </div>
+
+          <!-- right column content panel 3 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Event Location News</div>
+            <div class="panel-body no-padding">
+               ccc
+            </div>
+          </div>
+
+          <!-- right column content panel 4 -->
+          <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70"></script> -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">Event Location: UK, RG27 0DN</div>
+            <div class="panel-body no-padding">
+              <div class="google-map" id="map1"></div>
+            </div>
+          </div>
+        
+        <!-- Ends right content column -->
+        </div>
+        
+        <!-- last column spacer -->
+        <div class="col-md-1">
+
+      <!-- End main content row -->
+      </div>
+      
+  <!-- Ends main container div -->
+  </div>
+
+
+    <!-- ******** JAVASCRIPT *************** -->
+    
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+
+<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+     
+<script type="text/javascript">
+ 
+$( init );
+ 
+function init() {
+  $('#makeMeDraggable').draggable();
+}
+ 
+</script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+
+          $( '.cp-toggle').click(function() {
+              $( ".panel.panel-cp" ).fadeIn();
+              $( ".cp-toggle" ).fadeOut();
+              });
+          
+          $( '#close-cp').click(function() {
+              $( ".panel.panel-cp" ).fadeOut();
+              $( ".cp-toggle" ).fadeIn();
+              });
+
+          $( '#bg1').click(function() {
+              $( "body" ).attr( "class", "bog1" );
+              });  
+          $( '#bg2').click(function() {
+              $( "body" ).attr( "class", "bog2" );
+              }); 
+          $( '#bg3').click(function() {
+              $( "body" ).attr( "class", "bog3" );
+              }); 
+          $( '#bg4').click(function() {
+              $( "body" ).attr( "class", "bog4" );
+              });        
+          $( '#bg5').click(function() {
+              $( "body" ).attr( "class", "bog5" );
+              });
+
+          $( '#ba1').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_1.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });  
+           $( '#ba2').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_2.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+            $( '#ba3').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_3.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+          $( '#ba4').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_4.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+          $( '#ba5').click(function() {
+              $( "#banner" ).fadeOut("fast",function() {
+                   $( "#banner" ).attr( "src", "assets/img/eg_banner_5.jpg" );
+                   $("#banner").fadeIn("fast");
+              });              
+          });
+        });
+          
+      </script> -->
+
+      <!-- <script type="text/javascript">
+          // When the window has finished loading google map
+          google.maps.event.addDomListener(window, 'load', init);
+
+          function init() {
+              // Options for Google map
+              // More info see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+              var mapOptions1 = {
+                  zoom: 15,
+                  center: new google.maps.LatLng(51.320394, -1.025664),
+                  // Style for Google Maps
+                  styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
+              };
+              // Get all html elements for map
+              var mapElement1 = document.getElementById('map1');
+              
+              // Create the Google Map using elements
+              var map1 = new google.maps.Map(mapElement1, mapOptions1);
+              
+          }
+      </script>  -->
+
+  </body>
+</html>
